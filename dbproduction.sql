@@ -15,8 +15,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 create database if not exists `dbtest`;
-use production;
-grant all on `dbtest` to 'dbtestuser'@'localhost' identified by 'dbpassword';
+use dbtest;
 --
 -- Table structure for table `custdetails`
 --
@@ -38,3 +37,4 @@ CREATE TABLE IF NOT EXISTS`custdetails` (
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2014-01-23  5:45:18
+grant all on `dbtest` to 'dbtestuser'@'localhost' identified by 'dbpassword';
