@@ -16,7 +16,7 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 create database if not exists `dbtest`;
 use dbtest;
-grant all privileges on `dbtest` to 'dbtestuser'@'localhost' identified by 'dbpassword';
+GRANT ALL PRIVILEGES ON dbtest.* TO dbtestuser@localhost IDENTIFIED BY 'dbpassword';
 --
 -- Table structure for table `custdetails`
 --
