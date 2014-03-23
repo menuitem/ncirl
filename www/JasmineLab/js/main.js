@@ -1,14 +1,13 @@
 window._skel_config = {
-	    prefix: 'css/style',
-		preloadStyleSheets: true,
-		resetCSS: true,
-		boxModel: 'border',
-		grid: { gutters: 30 },
-		breakpoints: {
-		wide: { range: '1200-', containers: 1140, grid: { gutters: 50 } },
-		narrow: { range: '1000-1199', containers: 960 },
-		narrow: { range: '481-1000', containers: 800 },
-		mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
-	  }
-  };
-
+  prefix: "style",
+  resetCSS: true,
+  boxModel: "border",
+  grid: { gutters: 40 },
+  breakpoints: {
+    wide: { range: "1300-", containers: 1280, grid: { gutters: 60 } },
+    narrow: { range: "-1299", containers: "fluid", grid: { gutters: 50 } },
+    narrow960: { range: "-960" },
+    narrow740: { range: "-740" },
+    narrow460: { range: "-460", grid: { collapse: true } }
+  }
+};
