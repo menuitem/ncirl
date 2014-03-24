@@ -34,11 +34,11 @@ b.addEventListener('click', function(e){
 	n1 = parseFloat(input1.value);
 	n2 = parseFloat(input2.value);
 if (!isNaN(n1) && isNaN(n2)){
-	var n= Converter.convertFromImperialToMetric(n1);
-	document.getElementById('number2').value=n;
+	// var n= Converter.convertFromImperialToMetric(n1);
+	document.getElementById('number2').value = (Converter.convertFromImperialToMetric(n1));
 }
 if (!isNaN(n2) && isNaN(n1)){
-	var n= Converter.convertFromMetricToImperial(n2);
-	document.getElementById('number1').value=n;
+	// var n= Converter.convertFromMetricToImperial(n2);
+	document.getElementById('number1').value = (Converter.convertFromMetricToImperial(n2));
 }
-})
+});
